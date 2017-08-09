@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:onClick="reset"
+            android:text="Reset" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/teamName"
+                    android:text="@string/team_a" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/score" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add150ForTeamA"
+                    android:text="@string/snitch150" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add10ForTeamA"
+                    android:text="@string/quaffle10" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add1ForTeamA"
+                    android:text="@string/plus1" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="subtract1ForTeamA"
+                    android:text="@string/less1"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray"></View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/teamName"
+                    android:text="@string/team_b" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/score" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add150ForTeamB"
+                    android:text="@string/snitch150" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add10ForTeamB"
+                    android:text="@string/quaffle10" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="add1ForTeamB"
+                    android:text="@string/plus1" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="subtract1ForTeamB"
+                    android:text="@string/less1"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

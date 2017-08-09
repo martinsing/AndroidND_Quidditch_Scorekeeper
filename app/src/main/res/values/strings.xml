@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quidditch Scorekeeper</string>
+    <string name="snitch150">+150 Snitch</string>
+    <string name="quaffle10">+10 Quaffle</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="plus1">+1</string>
+    <string name="less1">-1</string>
+</resources>
